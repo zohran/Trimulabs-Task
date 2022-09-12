@@ -1,5 +1,11 @@
 import { gql, useQuery } from "@apollo/client";
 
+/** 
+ *  
+ * Testing Query
+ * 
+*/
+
 export const Get_Jobs = () => {
   const getjobs = gql`
     query {
@@ -17,6 +23,12 @@ export const Get_Jobs = () => {
   return useQuery(getjobs);
 };
 
+
+/** 
+ *  
+ * Query to get all the information about a selected job
+ * 
+*/
 export const Get_Job_Detail = (companySlug,jobSlug) => {
   const Get_Job = gql`
     {
@@ -53,6 +65,12 @@ export const Get_Job_Detail = (companySlug,jobSlug) => {
 
   return useQuery(Get_Job);
 };
+
+/** 
+ *  
+ * Query to get all the jobs from the Job API using useQuery hook
+ * 
+*/
 
 export const Temp = () => {
   const jobs = gql`
