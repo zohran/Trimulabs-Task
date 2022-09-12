@@ -46,8 +46,8 @@ function Details() {
           </div>
           <div className="detail-top-right">
             <div>
-              <div className="detail-tags">
-                Tags
+              <div className="detail-tags" style={{fontSize:"15rem"}}>
+                Tags:
                 <div className="tags">
                   {data.job.tags.map((tag) => (
                     <div className="tag">{tag.name}</div>
@@ -56,9 +56,9 @@ function Details() {
               </div>
             </div>
             <div>
-              <div className="detail-date">
+              <div className="detail-date" style={{fontSize:"15rem"}}>
                 Date:
-                <div style={{ color: "white" }}>{data.job.createdAt}</div>
+                <div style={{ color: "white", fontSize:"10rem" }}>{data.job.createdAt}</div>
               </div>
             </div>
 
@@ -75,8 +75,7 @@ function Details() {
           </div>
         </div>
         <div className="detail-bottom">
-          <div style={{ color: "black" }}>
-            Description
+          <div>
             <div className="detail-description">{data.job.description}</div>
           </div>
         </div>
